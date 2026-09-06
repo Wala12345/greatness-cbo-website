@@ -8,6 +8,8 @@ import bannerImg from "@/assets/IMG-20260818-WA0235.jpg.asset.json";
 import gatheringImg from "@/assets/IMG-20260818-WA0233.jpg.asset.json";
 import mealImg from "@/assets/IMG_20260822_054716_042.jpg.asset.json";
 import drawingImg from "@/assets/IMG-20260818-WA0241.jpg.asset.json";
+import musicTherapyImg from "@/assets/music-therapy.jpg";
+import urbanFarmingImg from "@/assets/urban-farming.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -73,6 +75,9 @@ function Index() {
             </a>
             <a href="#story" className="hover:text-g4g-blue">
               Our Story
+            </a>
+            <a href="#mission" className="hover:text-g4g-blue">
+              Mission &amp; Vision
             </a>
             <a href="#programs" className="hover:text-g4g-blue">
               Programs
@@ -168,6 +173,86 @@ function Index() {
           </div>
         </div>
       </section>
+
+      <section id="mission" className="scroll-mt-20 py-24">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="grid gap-8 md:grid-cols-2">
+            <div className="rounded-3xl border border-border bg-card p-10 shadow-sm">
+              <span className="text-sm font-bold tracking-widest text-g4g-blue uppercase">
+                Our Mission
+              </span>
+              <p className="mt-5 text-lg leading-relaxed text-muted-foreground">
+                To empower autistic children, deaf children and orphans in Nairobi by using music as
+                therapy, organic urban farming as a life skill, and community advocacy to build a
+                society where every child is seen, supported and valued.
+              </p>
+            </div>
+            <div className="rounded-3xl border border-border bg-card p-10 shadow-sm">
+              <span className="text-sm font-bold tracking-widest text-g4g-green uppercase">
+                Our Vision
+              </span>
+              <p className="mt-5 text-lg leading-relaxed text-muted-foreground">
+                A Kenya where autism is understood as a different ability — where every
+                neurodivergent child grows up included, self-reliant and celebrated for the gift
+                they bring to their community.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-8 grid gap-8 md:grid-cols-3">
+            {[
+              {
+                title: "Dignity",
+                body: "Every child is treated as capable, never as a burden or a diagnosis.",
+              },
+              {
+                title: "Inclusion",
+                body: "Families, schools and neighbours are part of the journey, not spectators.",
+              },
+              {
+                title: "Sustainability",
+                body: "What we grow and teach keeps feeding the community long after a visit.",
+              },
+            ].map((v) => (
+              <div key={v.title} className="rounded-2xl bg-secondary p-8">
+                <h3 className="font-display text-lg font-bold">{v.title}</h3>
+                <p className="mt-3 text-muted-foreground">{v.body}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-8 grid gap-8 md:grid-cols-2">
+            <figure>
+              <img
+                src={musicTherapyImg}
+                alt="Children playing hand drums together in a music therapy session"
+                loading="lazy"
+                width={1280}
+                height={960}
+                className="aspect-4/3 w-full rounded-3xl object-cover shadow-lg"
+              />
+              <figcaption className="mt-3 text-sm text-muted-foreground">
+                Rhythm sessions give children a way to communicate beyond words.
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                src={urbanFarmingImg}
+                alt="Community members tending an organic urban vegetable garden in Nairobi"
+                loading="lazy"
+                width={1280}
+                height={960}
+                className="aspect-4/3 w-full rounded-3xl object-cover shadow-lg"
+              />
+              <figcaption className="mt-3 text-sm text-muted-foreground">
+                Sack gardens teach life skills and put fresh food on the table.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+
 
       <section id="programs" className="scroll-mt-20 py-24">
         <div className="mx-auto max-w-7xl px-6">
