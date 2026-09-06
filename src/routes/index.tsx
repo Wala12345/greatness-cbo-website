@@ -254,7 +254,7 @@ function Index() {
 
 
 
-      <section id="programs" className="scroll-mt-20 py-24">
+      <section id="programs" className="scroll-mt-20 bg-secondary py-24">
         <div className="mx-auto max-w-7xl px-6">
           <div className="text-center">
             <h2 className="font-display text-3xl font-bold md:text-4xl">How We Create Greatness</h2>
@@ -283,7 +283,7 @@ function Index() {
         </div>
       </section>
 
-      <section className="bg-secondary py-24">
+      <section className="py-24">
         <div className="mx-auto max-w-7xl px-6">
           <h2 className="font-display text-3xl font-bold md:text-4xl">Moments From Our Work</h2>
           <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
