@@ -65,11 +65,11 @@ function Index() {
               alt="Great for Greatness C.B.O logo"
               className="size-12 rounded-md object-contain"
             />
-            <span className="font-display text-xl font-bold tracking-tight text-g4g-blue">
+            <span className="font-display text-xl font-semibold tracking-tight text-g4g-blue">
               G4G CBO
             </span>
           </div>
-          <div className="hidden space-x-8 text-sm font-semibold md:flex">
+          <div className="hidden space-x-8 text-sm font-medium md:flex">
             <a href="#home" className="text-g4g-blue">
               Home
             </a>
@@ -88,7 +88,7 @@ function Index() {
           </div>
           <a
             href="#contact"
-            className="rounded-full bg-g4g-red px-6 py-2.5 text-sm font-bold text-primary-foreground shadow-lg transition-transform hover:scale-105 active:scale-95"
+            className="rounded-full bg-g4g-red px-6 py-2.5 text-sm font-semibold text-primary-foreground shadow-lg transition-transform hover:scale-105 active:scale-95"
           >
             DONATE NOW
           </a>
@@ -109,22 +109,22 @@ function Index() {
         </div>
 
         <div className="relative z-10 mx-auto max-w-4xl px-6 text-center text-primary-foreground">
-          <h1 className="font-display text-5xl leading-tight font-extrabold md:text-7xl">
+          <h1 className="font-display text-5xl leading-tight font-bold md:text-7xl">
             Great for <span className="text-g4g-amber">Greatness</span> CBO
           </h1>
-          <p className="mt-6 text-xl font-medium text-primary-foreground/85 md:text-2xl">
+          <p className="mt-6 text-xl font-normal text-primary-foreground/85 md:text-2xl">
             "Autism is not a disability but a different ability to be valued."
           </p>
           <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
             <a
               href="#programs"
-              className="rounded-full bg-g4g-blue px-8 py-4 font-bold text-primary-foreground transition-opacity hover:opacity-90"
+              className="rounded-full bg-g4g-blue px-8 py-4 font-semibold text-primary-foreground transition-opacity hover:opacity-90"
             >
               Discover Our Programs
             </a>
             <a
               href="#story"
-              className="rounded-full border-2 border-current px-8 py-4 font-bold transition-colors hover:bg-background hover:text-foreground"
+              className="rounded-full border-2 border-current px-8 py-4 font-semibold transition-colors hover:bg-background hover:text-foreground"
             >
               Read Our Story
             </a>
@@ -136,7 +136,7 @@ function Index() {
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid gap-16 md:grid-cols-2 lg:items-center">
             <div>
-              <h2 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">
+              <h2 className="font-display text-3xl font-semibold tracking-tight sm:text-4xl">
                 From a Band to a <span className="text-g4g-green">Movement</span>
               </h2>
               <div className="mt-8 space-y-6 text-lg leading-relaxed text-muted-foreground">
@@ -178,7 +178,7 @@ function Index() {
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid gap-8 md:grid-cols-2">
             <div className="rounded-3xl border border-border bg-card p-10 shadow-sm">
-              <span className="text-sm font-bold tracking-widest text-g4g-blue uppercase">
+              <span className="text-sm font-semibold tracking-widest text-g4g-blue uppercase">
                 Our Mission
               </span>
               <p className="mt-5 text-lg leading-relaxed text-muted-foreground">
@@ -188,7 +188,7 @@ function Index() {
               </p>
             </div>
             <div className="rounded-3xl border border-border bg-card p-10 shadow-sm">
-              <span className="text-sm font-bold tracking-widest text-g4g-green uppercase">
+              <span className="text-sm font-semibold tracking-widest text-g4g-green uppercase">
                 Our Vision
               </span>
               <p className="mt-5 text-lg leading-relaxed text-muted-foreground">
@@ -215,7 +215,7 @@ function Index() {
               },
             ].map((v) => (
               <div key={v.title} className="rounded-2xl bg-secondary p-8">
-                <h3 className="font-display text-lg font-bold">{v.title}</h3>
+                <h3 className="font-display text-lg font-semibold">{v.title}</h3>
                 <p className="mt-3 text-muted-foreground">{v.body}</p>
               </div>
             ))}
@@ -257,7 +257,7 @@ function Index() {
       <section id="programs" className="scroll-mt-20 bg-secondary py-24">
         <div className="mx-auto max-w-7xl px-6">
           <div className="text-center">
-            <h2 className="font-display text-3xl font-bold md:text-4xl">How We Create Greatness</h2>
+            <h2 className="font-display text-3xl font-semibold md:text-4xl">How We Create Greatness</h2>
             <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
               Empowering neurodivergent children through music, sustainable living and community
               awareness.
@@ -275,7 +275,7 @@ function Index() {
                 >
                   <div className={`size-6 rounded-full border-4 ${p.dot}`} />
                 </div>
-                <h3 className="font-display text-xl font-bold">{p.title}</h3>
+                <h3 className="font-display text-xl font-semibold">{p.title}</h3>
                 <p className="mt-4 text-muted-foreground">{p.body}</p>
               </div>
             ))}
@@ -285,7 +285,7 @@ function Index() {
 
       <section className="py-24">
         <div className="mx-auto max-w-7xl px-6">
-          <h2 className="font-display text-3xl font-bold md:text-4xl">Moments From Our Work</h2>
+          <h2 className="font-display text-3xl font-semibold md:text-4xl">Moments From Our Work</h2>
           <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {[
               { src: bannerImg.url, alt: "Autism awareness banner at a G4G community event" },
@@ -315,7 +315,7 @@ function Index() {
                   alt=""
                   className="size-10 rounded bg-background object-contain p-0.5"
                 />
-                <span className="font-display text-xl font-bold">Great for Greatness</span>
+                <span className="font-display text-xl font-semibold">Great for Greatness</span>
               </div>
               <p className="mt-4 text-sm opacity-70">
                 A Community Based Organization dedicated to empowering autistic children and orphans
@@ -324,7 +324,7 @@ function Index() {
             </div>
             <div className="flex gap-12 text-sm">
               <div>
-                <h3 className="font-bold">Get Involved</h3>
+                <h3 className="font-semibold">Get Involved</h3>
                 <ul className="mt-4 space-y-2 opacity-70">
                   <li>Donate</li>
                   <li>Volunteer</li>
@@ -332,7 +332,7 @@ function Index() {
                 </ul>
               </div>
               <div>
-                <h3 className="font-bold">Contact</h3>
+                <h3 className="font-semibold">Contact</h3>
                 <ul className="mt-4 space-y-2 opacity-70">
                   <li>Zimmerman, Nairobi</li>
                   <li>
